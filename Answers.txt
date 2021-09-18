@@ -1,0 +1,354 @@
+Question 2:
+Python interpreter is responsible for executing the Python scripts. Python interpreter is a piece of software which works between the Python program and computer hardware. Here we are describing the series of ways to run Python scripts.
+
+a.The operating system command-line or terminal.
+b.The Python interactive mode.
+c.The IDE or Text editor
+d.The file manager of system.
+
+The operating system command-line or Terminal
+We can run the Python code using a command line because in Python shell once we close the session, we will lose the complete code that we have written. So it is good to write a Python code using the plain text files. The text file must save as .py extension. 
+
+Example:
+Printing the name of a person taking input from user
+name=input("enter the name")
+print(name)
+
+We write the Python print statement and save it as sample.py in working directory. Now, we will run this file using the command-line.
+Using the Python command line
+Open the command line to run a Python script. We need to type the python, followed by the file name to execute the file. Now, hit the enter key, and if there is no the error in file, we will see the output as follows.
+The Python interactive mode
+To run the Python code, we can use the Python interactive session. We need to start Python interactive session, just open a command-line or terminal in start menu, then type in python, and press enter key.
+It allows us to check every piece of code, and this facility makes it an awesome development tool. But once we close the session it will lose all code that we have written.
+Below are the few options to exit the interactive mode.
+Type built-in functions quit() or exit(). Or
+Type the enter ctrl+ Z key combination to end the current session of Python interactive shell.
+The IDE or Text Editor
+The IDE stands for Integrated Development Environment. There are various IDEs but Pycharm is Python's most popular and useful text editor among them. It is recommended for developing large and more complex applications. Here are using the Pycharm to run python script.
+Create a new project and then create a new Python file using the .py extension.
+Now, click on the green button and it will show the output as follows.
+The file manager system
+The Python file can run by double-clicking on its icon in a file manager. This process may not be widely used in the development stage. The file should be associated with the .py or .pyw with the program python.exe, respectively.
+
+Question 3:
+Basic Commands in Python are:
+string — Common string operations.
+re — Regular expression operations.
+difflib — Helpers for computing deltas.
+textwrap — Text wrapping and filling.
+unicodedata — Unicode Database.
+stringprep — Internet String Preparation.
+readline — GNU readline interface.
+rlcompleter — Completion function for GNU readline.
+
+Variables:
+One of the most powerful features of a programming language is the ability to manipulate variables. A variable is a name that refers to a value.
+The assignment statement creates new variables and gives them values:
+
+>>> message = "What's up, Doc?"
+>>> n = 17
+>>> pi = 3.14159
+
+This example makes three assignments. The first assigns the string "What's up, Doc?" to a new variable named message. The second gives the integer 17 to n, and the third gives the floating-point number 3.14159 to pi.
+
+Notice that the first statement uses double quotes to enclose the string. In general, single and double quotes do the same thing, but if the string contains a single quote (or an apostrophe, which is the same character), you have to use double quotes to enclose it.
+
+A common way to represent variables on paper is to write the name with an arrow pointing to the variable's value. This kind of figure is called a state diagram because it shows what state each of the variables is in (think of it as the variable's state of mind). This diagram shows the result of the assignment statements:
+
+The print statement also works with variables.
+>>> print message
+What's up, Doc?
+>>> print n
+17
+>>> print pi
+3.14159
+In each case the result is the value of the variable. Variables also have types; again, we can ask the interpreter what they are.
+>>> type(message)
+<type 'str'>
+>>> type(n)
+<type 'int'>
+>>> type(pi)
+<type 'float'>
+
+The type of a variable is the type of the value it refers to.
+
+Statement:
+
+A statement is an instruction that the Python interpreter can execute. We have seen two kinds of statements: print and assignment.
+
+When you type a statement on the command line, Python executes it and displays the result, if there is one. The result of a print statement is a value. Assignment statements don't produce a result.
+
+A script usually contains a sequence of statements. If there is more than one statement, the results appear one at a time as the statements execute.
+
+For example, the script
+
+print 1
+x = 2
+print x
+
+produces the output
+
+1
+2
+
+Again, the assignment statement produces no output.
+
+Question 4:
+
+In Python, input and output operations (OI Operations) are performed using two built-in functions. Following are the two built-in functions to perform output operations and input operations.
+
+print( ) - Used for output operation.
+input( ) - Used for input operations.
+Output Operations using print() function
+The built-in function print( ) is used to output the given data to the standard output device (Screen).
+
+Assigning values, we can assign values to the variable using the equal to operator
+Assigning Values to Variable example
+name   = "Python"    #string value
+age    = 3           #integer value
+price  = 0.00        #float value
+
+Multiple Assignment in Python
+we can assign the same object to multiple variables.
+num1 = num2 = num3 = 0 
+Multi-value Assignment in Python
+We can also assign the multiple objects to multiple variables.
+name, page_count, price = "Python", 300, 254.65
+print(name, page_count, price)
+
+Keywords are the reserved words in Python. We cannot use a keyword as a variable name, function name or any other identifier.
+
+Here's a list of all keywords in Python Programming
+
+Keywords in Python programming language
+False	await	else	import	pass
+None	break	except	in	raise
+True	class	finally	is	return
+and	continue	for	lambda	try
+as	def	from	nonlocal	while
+assert	del	global	not	with
+async	elif	if	or	yield
+The above keywords may get altered in different versions of Python.
+
+Question 5:
+Standard data types
+A variable can hold different types of values. For example, a person's name must be stored as a string whereas its id must be stored as an integer.
+
+Python provides various standard data types that define the storage method on each of them. The data types defined in Python are given below.
+
+Numbers
+Sequence Type
+Boolean
+Set
+Dictionary
+Python Data Types
+In this section of the tutorial, we will give a brief introduction of the above data-types. We will discuss each one of them in detail later in this tutorial.
+
+Numbers
+Number stores numeric values. The integer, float, and complex values belong to a Python Numbers data-type. Python provides the type() function to know the data-type of the variable. Similarly, the isinstance() function is used to check an object belongs to a particular class.
+
+Python creates Number objects when a number is assigned to a variable. For example;
+
+a = 5  
+print("The type of a", type(a))  
+  
+b = 40.5  
+print("The type of b", type(b))  
+  
+c = 1+3j  
+print("The type of c", type(c))  
+print(" c is a complex number", isinstance(1+3j,complex))  
+Output:
+
+The type of a <class 'int'>
+The type of b <class 'float'>
+The type of c <class 'complex'>
+c is complex number: True
+Python supports three types of numeric data.
+   Learn more
+
+Int - Integer value can be any length such as integers 10, 2, 29, -20, -150 etc. Python has no restriction on the length of an integer. Its value belongs to int
+Float - Float is used to store floating-point numbers like 1.9, 9.902, 15.2, etc. It is accurate upto 15 decimal points.
+complex - A complex number contains an ordered pair, i.e., x + iy where x and y denote the real and imaginary parts, respectively. The complex numbers like 2.14j, 2.0 + 2.3j, etc.
+Sequence Type
+String
+The string can be defined as the sequence of characters represented in the quotation marks. In Python, we can use single, double, or triple quotes to define a string.
+
+String handling in Python is a straightforward task since Python provides built-in functions and operators to perform operations in the string.
+
+In the case of string handling, the operator + is used to concatenate two strings as the operation "hello"+" python" returns "hello python".
+
+The operator * is known as a repetition operator as the operation "Python" *2 returns 'Python Python'.
+
+The following example illustrates the string in Python.
+     Learn more
+
+Example - 1
+
+str = "string using double quotes"  
+print(str)  
+s = '''''A multiline 
+string'''  
+print(s)  
+Output:
+
+string using double quotes
+A multiline
+string
+Consider the following example of string handling.
+
+
+Example - 2
+
+str1 = 'hello javatpoint' #string str1    
+str2 = ' how are you' #string str2    
+print (str1[0:2]) #printing first two character using slice operator    
+print (str1[4]) #printing 4th character of the string    
+print (str1*2) #printing the string twice    
+print (str1 + str2) #printing the concatenation of str1 and str2    
+Output:
+
+he
+o
+hello javatpointhello javatpoint
+hello javatpoint how are you
+List
+Python Lists are similar to arrays in C. However, the list can contain data of different types. The items stored in the list are separated with a comma (,) and enclosed within square brackets [].
+
+We can use slice [:] operators to access the data of the list. The concatenation operator (+) and repetition operator (*) works with the list in the same way as they were working with the strings.
+
+Consider the following example.
+
+list1  = [1, "hi", "Python", 2]    
+#Checking type of given list  
+print(type(list1))  
+  
+#Printing the list1  
+print (list1)  
+  
+# List slicing  
+print (list1[3:])  
+  
+# List slicing  
+print (list1[0:2])   
+  
+# List Concatenation using + operator  
+print (list1 + list1)  
+  
+# List repetation using * operator  
+print (list1 * 3)  
+Output:
+
+[1, 'hi', 'Python', 2]
+[2]
+[1, 'hi']
+[1, 'hi', 'Python', 2, 1, 'hi', 'Python', 2]
+[1, 'hi', 'Python', 2, 1, 'hi', 'Python', 2, 1, 'hi', 'Python', 2]
+Tuple
+A tuple is similar to the list in many ways. Like lists, tuples also contain the collection of the items of different data types. The items of the tuple are separated with a comma (,) and enclosed in parentheses ().
+
+A tuple is a read-only data structure as we can't modify the size and value of the items of a tuple.
+
+Let's see a simple example of the tuple.
+
+
+tup  = ("hi", "Python", 2)    
+# Checking type of tup  
+print (type(tup))    
+  
+#Printing the tuple  
+print (tup)  
+  
+# Tuple slicing  
+print (tup[1:])    
+print (tup[0:1])    
+  
+# Tuple concatenation using + operator  
+print (tup + tup)    
+  
+# Tuple repatation using * operator  
+print (tup * 3)     
+  
+# Adding value to tup. It will throw an error.  
+t[2] = "hi"  
+Output:
+
+<class 'tuple'>
+('hi', 'Python', 2)
+('Python', 2)
+('hi',)
+('hi', 'Python', 2, 'hi', 'Python', 2)
+('hi', 'Python', 2, 'hi', 'Python', 2, 'hi', 'Python', 2)
+
+Traceback (most recent call last):
+  File "main.py", line 14, in <module>
+    t[2] = "hi";
+TypeError: 'tuple' object does not support item assignment
+Dictionary
+Dictionary is an unordered set of a key-value pair of items. It is like an associative array or a hash table where each key stores a specific value. Key can hold any primitive data type, whereas value is an arbitrary Python object.
+
+The items in the dictionary are separated with the comma (,) and enclosed in the curly braces {}.
+
+Consider the following example.
+
+d = {1:'Jimmy', 2:'Alex', 3:'john', 4:'mike'}     
+  
+# Printing dictionary  
+print (d)  
+  
+# Accesing value using keys  
+print("1st name is "+d[1])   
+print("2nd name is "+ d[4])    
+  
+print (d.keys())    
+print (d.values())    
+Output:
+
+1st name is Jimmy
+2nd name is mike
+{1: 'Jimmy', 2: 'Alex', 3: 'john', 4: 'mike'}
+dict_keys([1, 2, 3, 4])
+dict_values(['Jimmy', 'Alex', 'john', 'mike'])
+Boolean
+Boolean type provides two built-in values, True and False. These values are used to determine the given statement true or false. It denotes by the class bool. True can be represented by any non-zero value or 'T' whereas false can be represented by the 0 or 'F'. Consider the following example.
+
+# Python program to check the boolean type  
+print(type(True))  
+print(type(False))  
+print(false)  
+Output:
+
+<class 'bool'>
+<class 'bool'>
+NameError: name 'false' is not defined
+Set
+Python Set is the unordered collection of the data type. It is iterable, mutable(can modify after creation), and has unique elements. In set, the order of the elements is undefined; it may return the changed sequence of the element. The set is created by using a built-in function set(), or a sequence of elements is passed in the curly braces and separated by the comma. It can contain various types of values
+
+
+Question 6:
+
+
+String
+The string can be defined as the sequence of characters represented in the quotation marks. In Python, we can use single, double, or triple quotes to define a string.
+
+String handling in Python is a straightforward task since Python provides built-in functions and operators to perform operations in the string.
+
+In the case of string handling, the operator + is used to concatenate two strings as the operation "hello"+" python" returns "hello python".
+
+The operator * is known as a repetition operator as the operation "Python" *2 returns 'Python Python'.
+
+The following example illustrates the string in Python.
+Example
+str = "string using double quotes"  
+print(str)  
+s = '''''A multiline 
+string'''  
+print(s)  
+List of string operators available in Python 3.
++	Concatenates (joins) string1 and string2	string1 + string2
+*	Repeats the string for as many times as specified by x	string * x
+[]	Slice — Returns the character from the index provided at x.	string[x]
+[:]	Range Slice — Returns the characters from the range provided at x:y.	string[x:y]
+in	Membership — Returns True if x exists in the string. Can be multiple characters.	x in string
+not in	Membership — Returns True if x does not exist in the string. Can be multiple characters.	x not in string
+These are some of the operations in Strings
